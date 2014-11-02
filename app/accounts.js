@@ -42,8 +42,8 @@ var modo = require('../lib/modo.js');
           value_symbol : "$"
         },
         {
-          type: "microsoft",
-          title: "Microsoft Store",
+          type: "bn",
+          title: "Barnes and Noble",
           image : "http://bit.ly/1qgTrnA",
           value : 15.00,
           id : "2345678901234567",
