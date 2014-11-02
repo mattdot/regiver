@@ -5,11 +5,6 @@ var request = require("request");
 		res.send({
 			charities : [
 				{
-					id : "",
-					name : "St. Judes Children's Fund",
-					logo : ""
-				},
-				{
 organization_uuid: "b7dcbd36-edd0-11df-ab8c-4061860da51d",
 organization_type_id: "1",
 organization_name: "HUMANE SOCIETY",
