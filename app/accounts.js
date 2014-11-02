@@ -1,5 +1,15 @@
 var request = require("request");
 var modo = require('../lib/modo.js');
+/**
+ * http://regiverblob.blob.core.windows.net/giftcards/barnesandnoble-360x200.png
+http://regiverblob.blob.core.windows.net/giftcards/bassproshop-360x200.png
+http://regiverblob.blob.core.windows.net/giftcards/bestbuy-360x200.png
+http://regiverblob.blob.core.windows.net/giftcards/lowes-360x200.png
+http://regiverblob.blob.core.windows.net/giftcards/staples-360x200.png
+http://regiverblob.blob.core.windows.net/giftcards/starbucks-360x200.png
+http://regiverblob.blob.core.windows.net/giftcards/target-360x200.png
+
+ */
 
 (function(){ 
   exports.post = function(req, res) {
@@ -32,21 +42,31 @@ var modo = require('../lib/modo.js');
       },
       cards : [
         {
-          type: "starbucks",
-          title : "Starbucks",
+          type: "basspro",
+          title : "Bass Pro Shop",
           id : "1234567890123456",
           masked : "**************1233",
-          image : "http://bit.ly/1sXrVvj",
-          value : 15.00,
+          image : "http://regiverblob.blob.core.windows.net/giftcards/bassproshop-360x200.png",
+          value : 85.00,
           value_currency : "USD",
           value_symbol : "$"
         },
         {
-          type: "microsoft",
-          title: "Microsoft Store",
-          image : "http://bit.ly/1qgTrnA",
-          value : 15.00,
+          type: "bn",
+          title: "Barnes & Noble",
+          image : "http://regiverblob.blob.core.windows.net/giftcards/barnesandnoble-360x200.png",
+          value : 25.00,
           id : "2345678901234567",
+          masked : "**************1233",
+          value_currency : "USD",
+          value_symbol : "$"
+        },
+        {
+          type: "staples",
+          title: "Stapes",
+          image : "http://regiverblob.blob.core.windows.net/giftcards/staples-360x200.png",
+          value : 20.00,
+          id : "5345678901234567",
           masked : "**************1233",
           value_currency : "USD",
           value_symbol : "$"
@@ -60,7 +80,7 @@ var modo = require('../lib/modo.js');
       charities : [
           { 
               title : "St. Jude's Children's Hospital",
-              image : "http://www.mamanista.com/wp-content/uploads/2013/11/StJude_TG_logo.jpg"
+              image : "http://regiverblob.blob.core.windows.net/charities/st-judes.png"
           }
       ]
     });

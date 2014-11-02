@@ -3,7 +3,7 @@
 */
 exports.post = function(req, res) {
 	res.send({
-		message: "Thank you for your donation to " + req.body.charity_id + "."
+		message: "Thank you for your donation!"
 	});
 	res.end();
 };
